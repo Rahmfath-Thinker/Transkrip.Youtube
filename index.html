@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT Transcript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+   <h1 id="title">YT Transcript</h1>
+
+<p class="subtitle" id="subtitle">
+    Tempel link YouTube dan ambil transkrip
+</p>
+
+    <input
+        type="text"
+        id="youtubeUrl"
+        placeholder="https://youtube.com/watch?v=..."
+    >
+
+<div class="language-chips">
+
+    <button class="chip" data-lang="id">Indonesia</button>
+<button class="chip" data-lang="en">English</button>
+<button class="chip" data-lang="ja">日本語</button>
+<button class="chip" data-lang="ar">العربية</button>
+<button class="chip" data-lang="ms">Bahasa Melayu</button>
+<button class="chip" data-lang="es">Español</button>
+<button class="chip" data-lang="pt">Português</button>
+<button class="chip" data-lang="fr">Français</button>
+<button class="chip" data-lang="de">Deutsch</button>
+<button class="chip" data-lang="ko">한국어</button>
+<button class="chip" data-lang="zh">中文</button>
+<button class="chip" data-lang="ru">Русский</button>
+</div>
+
+    <button id="getTranscript">
+        Ambil Transkrip
+    </button>
+
+    <div class="result-box">
+        <textarea
+            id="result"
+            placeholder="Transkrip akan muncul di sini..."
+        ></textarea>
+    </div>
+
+    <button id="copyBtn">
+        Salin Teks
+    </button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

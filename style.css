@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0f1115;
+    color:white;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:700px;
+    background:#171a21;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:8px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#a0a0a0;
+    margin-bottom:20px;
+}
+
+input,
+select,
+button,
+textarea{
+    width:100%;
+    border:none;
+    outline:none;
+    border-radius:12px;
+}
+
+input,
+select{
+    padding:14px;
+    margin-bottom:12px;
+    background:#222734;
+    color:white;
+}
+
+button{
+    padding:14px;
+    background:#4f7cff;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.2s;
+}
+
+button:hover{
+    opacity:.9;
+}
+
+.result-box{
+    margin-top:15px;
+}
+
+textarea{
+    background:#222734;
+    color:white;
+    min-height:300px;
+    resize:vertical;
+    padding:15px;
+}
+
+#copyBtn{
+    margin-top:12px;
+    background:#2d323f;
+}
+
+.language-chips{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:15px;
+}
+
+.chip{
+    width:auto;
+    padding:10px 16px;
+    border:none;
+    border-radius:999px;
+    background:#222734;
+    color:white;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.chip.active{
+    background:#4f7cff;
+}
+
+.chip:hover{
+    transform:translateY(-2px);
+}
