@@ -176,7 +176,9 @@ getBtn.addEventListener("click", async () => {
 
         const data = await response.json();
 
-        result.value = data.transcript || "Transkrip tidak ditemukan.";
+        result.value = 
+         data?.data?.full_text|| 
+         "Transkrip tidak ditemukan.";
 
     } catch (err) {
         result.value = "Gagal mengambil transkrip.";
