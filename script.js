@@ -171,7 +171,7 @@ getBtn.addEventListener("click", async () => {
 
         // Ganti URL ini nanti dengan Cloudflare Worker milikmu
         const response = await fetch(
-            `https://YOUR-WORKER.workers.dev/transcript?url=${encodeURIComponent(url)}&lang=${lang}`
+            `https://transkripyoutube.rifki91827.workers.dev?url=${encodeURIComponent(url)}&lang=${lang}`
         );
 
         const data = await response.json();
